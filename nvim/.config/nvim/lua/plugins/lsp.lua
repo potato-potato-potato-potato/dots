@@ -38,10 +38,24 @@ return{
 						}
 					}
 				}
-
+			end,
+			["clangd"] = function()
+				lspconfig.clangd.setup({
+					capabilities = capabilities,
+					cmd = { "clangd", "--background-index", "--clang-tidy" },
+					on_attach = function(_, bufnr)
+						-- Optional: show diagnostics on hover
+						vim.api.nvim_create_autocmd("CursorHold", {
+							buffer = bufnr,
+							callback = function()
+								vim.diagnostic.open_float(nil, { focusable = false })
+							end
+						})
+					end
+				})
 			end,
 		}
 
 
-    end,
+	end,
 }
