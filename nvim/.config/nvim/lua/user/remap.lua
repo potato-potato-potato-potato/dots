@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
+-- bind jj to esc
+
+vim.keymap.set('i', 'jj', '<ESC>', {slient = true})
+
 
 -- fuzzy finder telescope
 
