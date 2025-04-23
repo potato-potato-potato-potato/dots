@@ -28,6 +28,8 @@ truncation_symbol = "…/"
 "Music" = " "
 "Pictures" = " "
 ".config" = ""
+"github" = ""
+
 [git_branch]
 symbol = ""
 style = "bg:#394260"
