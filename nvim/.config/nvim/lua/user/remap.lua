@@ -3,7 +3,7 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- bind jj to esc
 
-vim.keymap.set('i', 'jj', '<ESC>', {slient = true})
+vim.keymap.set('i', 'jj', '<ESC>', {silent = true})
 
 
 -- fuzzy finder telescope
