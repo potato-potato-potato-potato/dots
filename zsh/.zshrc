@@ -21,3 +21,6 @@ alias ls='ls --color=auto'
 
 # zoxide (z) start
 eval "$(zoxide init zsh)"
+
+#term thing
+export TERM=xterm-256color
