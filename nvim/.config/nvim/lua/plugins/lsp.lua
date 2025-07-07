@@ -24,6 +24,10 @@ return{
                     automatic_enable = true
 	    }
 
+            vim.lsp.config.pyright = {
+
+            }
+
             vim.lsp.config.lua_ls = {
                     settings = {
                             Lua = {
