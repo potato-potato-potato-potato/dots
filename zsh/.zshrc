@@ -19,6 +19,8 @@ export LS_COLORS="$(vivid generate tokyonight-storm)"
 
 alias ls='ls --color=auto'
 
+alias pdf='evince'
+
 # zoxide (z) start
 eval "$(zoxide init zsh)"
 
