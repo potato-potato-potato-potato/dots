@@ -24,3 +24,12 @@ eval "$(zoxide init zsh)"
 
 #term thing
 export TERM=xterm-256color
+
+, (){
+        if [[ -z "$1" ]]; then
+                echo "usage , <command> [args...]"
+                return 1
+        fi
+
+        systemd-cat "$@" &
+}
